@@ -1,5 +1,5 @@
 package edu.cmu.cs.cs214.rec04;
-
+import edu.cmu.cs.cs214.rec04.*;
 /**
  * InheritanceSortedIntList -- a variant of a SortedIntList that keeps
  * count of the number of attempted element insertions (not to be confused
@@ -10,7 +10,15 @@ package edu.cmu.cs.cs214.rec04;
  *
  */
 
-public class InheritanceSortedIntList {
-    // Write your implementation below with API documentation
-
+public class InheritanceSortedIntList extends SortedIntList { 
+    //your implementation below with API documentation
+    private int totalAdded;
+    public InheritanceSortedIntList() {
+        super();
+        totalAdded = 0;
+    }
+    
+    public int getTotalAdded(){
+        return totalAdded;
+    }
 }
